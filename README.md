@@ -11,7 +11,7 @@
       // Versuch, Suchfeld auszufüllen (für Browser, die Skripte weitergeben)
       setTimeout(() => {
         try {
-          const input = document.querySelector('input[type="search"], input[placeholder*="Suche"]');
+          const input = document.querySelector('input[type="app-search-box"], input[placeholder*="Suche"]');
           if (input) {
             input.value = "TSG 08 Roth";
             input.dispatchEvent(new Event("input", { bubbles: true }));
